@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		06A4A1AE26AF2D1F0095AE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4A1AD26AF2D1F0095AE2C /* AppDelegate.swift */; };
 		06A4A1B026AF2D1F0095AE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4A1AF26AF2D1F0095AE2C /* SceneDelegate.swift */; };
-		06A4A1B226AF2D1F0095AE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4A1B126AF2D1F0095AE2C /* ViewController.swift */; };
 		06A4A1B526AF2D1F0095AE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A4A1B326AF2D1F0095AE2C /* Main.storyboard */; };
 		06A4A1B726AF2D200095AE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A4A1B626AF2D200095AE2C /* Assets.xcassets */; };
 		06A4A1BA26AF2D200095AE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A4A1B826AF2D200095AE2C /* LaunchScreen.storyboard */; };
+		06A4A1C226AF38FC0095AE2C /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4A1C126AF38FC0095AE2C /* ContactsViewController.swift */; };
+		06A4A1C426AF3DA30095AE2C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4A1C326AF3DA30095AE2C /* Contact.swift */; };
+		D47687E426B1F5B10072115B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47687E326B1F5B10072115B /* ContactDetailsViewController.swift */; };
+		D47687E626B1FD6A0072115B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47687E526B1FD6A0072115B /* TabBarViewController.swift */; };
+		D47687E826B200440072115B /* SegmentedContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47687E726B200440072115B /* SegmentedContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06A4A1AA26AF2D1F0095AE2C /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A4A1AA26AF2D1F0095AE2C /* ContactListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A4A1AD26AF2D1F0095AE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A4A1AF26AF2D1F0095AE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06A4A1B126AF2D1F0095AE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06A4A1B426AF2D1F0095AE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06A4A1B626AF2D200095AE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06A4A1B926AF2D200095AE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06A4A1BB26AF2D200095AE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A4A1C126AF38FC0095AE2C /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		06A4A1C326AF3DA30095AE2C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		D47687E326B1F5B10072115B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		D47687E526B1FD6A0072115B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D47687E726B200440072115B /* SegmentedContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +48,8 @@
 		06A4A1A126AF2D1F0095AE2C = {
 			isa = PBXGroup;
 			children = (
-				06A4A1AC26AF2D1F0095AE2C /* TrackListApp */,
+				D47687E526B1FD6A0072115B /* TabBarViewController.swift */,
+				06A4A1AC26AF2D1F0095AE2C /* ContactListApp */,
 				06A4A1AB26AF2D1F0095AE2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +57,34 @@
 		06A4A1AB26AF2D1F0095AE2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06A4A1AA26AF2D1F0095AE2C /* TrackListApp.app */,
+				06A4A1AA26AF2D1F0095AE2C /* ContactListApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06A4A1AC26AF2D1F0095AE2C /* TrackListApp */ = {
+		06A4A1AC26AF2D1F0095AE2C /* ContactListApp */ = {
 			isa = PBXGroup;
 			children = (
 				06A4A1AD26AF2D1F0095AE2C /* AppDelegate.swift */,
 				06A4A1AF26AF2D1F0095AE2C /* SceneDelegate.swift */,
-				06A4A1B126AF2D1F0095AE2C /* ViewController.swift */,
 				06A4A1B326AF2D1F0095AE2C /* Main.storyboard */,
+				D47687E726B200440072115B /* SegmentedContactsTableViewController.swift */,
+				D47687E326B1F5B10072115B /* ContactDetailsViewController.swift */,
+				06A4A1C126AF38FC0095AE2C /* ContactsViewController.swift */,
+				06A4A1C326AF3DA30095AE2C /* Contact.swift */,
 				06A4A1B626AF2D200095AE2C /* Assets.xcassets */,
 				06A4A1B826AF2D200095AE2C /* LaunchScreen.storyboard */,
 				06A4A1BB26AF2D200095AE2C /* Info.plist */,
 			);
-			path = TrackListApp;
+			path = ContactListApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06A4A1A926AF2D1F0095AE2C /* TrackListApp */ = {
+		06A4A1A926AF2D1F0095AE2C /* ContactListApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06A4A1BE26AF2D200095AE2C /* Build configuration list for PBXNativeTarget "TrackListApp" */;
+			buildConfigurationList = 06A4A1BE26AF2D200095AE2C /* Build configuration list for PBXNativeTarget "ContactListApp" */;
 			buildPhases = (
 				06A4A1A626AF2D1F0095AE2C /* Sources */,
 				06A4A1A726AF2D1F0095AE2C /* Frameworks */,
@@ -82,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = TrackListApp;
+			name = ContactListApp;
 			productName = TrackListApp;
-			productReference = 06A4A1AA26AF2D1F0095AE2C /* TrackListApp.app */;
+			productReference = 06A4A1AA26AF2D1F0095AE2C /* ContactListApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06A4A1A526AF2D1F0095AE2C /* Build configuration list for PBXProject "TrackListApp" */;
+			buildConfigurationList = 06A4A1A526AF2D1F0095AE2C /* Build configuration list for PBXProject "ContactListApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06A4A1A926AF2D1F0095AE2C /* TrackListApp */,
+				06A4A1A926AF2D1F0095AE2C /* ContactListApp */,
 			);
 		};
 /* End PBXProject section */
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A4A1B226AF2D1F0095AE2C /* ViewController.swift in Sources */,
+				D47687E426B1F5B10072115B /* ContactDetailsViewController.swift in Sources */,
 				06A4A1AE26AF2D1F0095AE2C /* AppDelegate.swift in Sources */,
 				06A4A1B026AF2D1F0095AE2C /* SceneDelegate.swift in Sources */,
+				06A4A1C226AF38FC0095AE2C /* ContactsViewController.swift in Sources */,
+				D47687E826B200440072115B /* SegmentedContactsTableViewController.swift in Sources */,
+				D47687E626B1FD6A0072115B /* TabBarViewController.swift in Sources */,
+				06A4A1C426AF3DA30095AE2C /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +304,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ5VJ2W2YB;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = ContactListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftBook.TrackListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lessons.HW-2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +323,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ5VJ2W2YB;
-				INFOPLIST_FILE = TrackListApp/Info.plist;
+				INFOPLIST_FILE = ContactListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftBook.TrackListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lessons.HW-2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06A4A1A526AF2D1F0095AE2C /* Build configuration list for PBXProject "TrackListApp" */ = {
+		06A4A1A526AF2D1F0095AE2C /* Build configuration list for PBXProject "ContactListApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A4A1BC26AF2D200095AE2C /* Debug */,
@@ -331,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06A4A1BE26AF2D200095AE2C /* Build configuration list for PBXNativeTarget "TrackListApp" */ = {
+		06A4A1BE26AF2D200095AE2C /* Build configuration list for PBXNativeTarget "ContactListApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06A4A1BF26AF2D200095AE2C /* Debug */,
